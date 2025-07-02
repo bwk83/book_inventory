@@ -1,0 +1,13 @@
+#a book store's inventory 
+class Book:
+    def __init__(self, title, author, year_published, genre):
+        self.title = title
+        self.author = author
+        self.year_published = year_published
+        self.genre = genre
+    def describe(self):
+        print(f"'{self.title}' by {self.author} was published in {self.year_published}. This was a {self.genre} book.")
+my_book = Book("1984", "George Orwell", "1949", "non-fiction")
+my_book.describe()
+my_second_book = Book("Siddhartha", "Hermann Hesse", "1922", "nonfiction")
+my_second_book.describe()
